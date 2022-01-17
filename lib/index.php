@@ -11,7 +11,12 @@ define('PAGE_TITLE', 'WikWiki');
 define('BASE_PAGE', 'Home Page');
 define('FOOTER_TEXT', 'Copyright %Y Martin Srank. | Powered by <a href="https://github.com/smasty/WikWiki">WikWiki</a>.');
 
-@set_magic_quotes_runtime(false);
+// check if magic quotes logic is needed
+define('MQ_LOGIC', version_compare(phpversion(), '5.3.0', '<'));
+
+if (MQ_LOGIC) {
+    set_magic_quotes_runtime(false);
+}
 
 if(!@file_exists(dirname(__FILE__) . '/wikdata') || !@is_writable(dirname(__FILE__) . '/wikdata')){
     $ok = @mkdir(dirname(__FILE__) . '/wikdata');
@@ -406,7 +411,7 @@ function getContent($page){
  * @return bool
  */
 function savePageContent($fields){
-    if(@get_magic_quotes_gpc()){
+    if (MQ_LOGIC && get_magic_quotes_gpc()) {
         $fields = array_map(stripslashes, $fields);
     }
 
