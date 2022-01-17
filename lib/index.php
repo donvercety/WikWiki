@@ -34,7 +34,7 @@ $texy = new Texy();
 $texy->encoding = 'utf-8';
 $texy->headingModule->top = 2;
 $texy->headingModule->generateID = true;
-$texy->allowed['image'] = FALSE;
+$texy->allowed['image'] = true;
 $texy->registerLinePattern('parseWikiLinks', '~\[([^|\]]+)(?:\s*\|\s*([^\]]+)\s*)?\]~', 'wikilinks');
 
 
