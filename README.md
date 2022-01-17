@@ -1,6 +1,7 @@
 ![banner](banner.png)
 
 # WikWiki – minimalistic and lightweight
+[![GitHub release](https://img.shields.io/github/release/donvercety/WikWiki.svg)](https://github.com/donvercety/WikWiki/releases/latest)
 [![License](https://img.shields.io/github/license/donvercety/WikWiki)](https://github.com/donvercety/WikWiki/blob/master/LICENCE.md)
 
 I have stumbled on this simplistic wiki engine that is suitable for personal notebooks, journals or as a simple knowledge base. The author have abandoned it, so I decided to fork it and do some minor tweaking.
