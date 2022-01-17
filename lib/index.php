@@ -1,15 +1,22 @@
 <?php
+
 /**
- * WikWiki - simple wiki in one PHP file. http://smasty.net/wikwiki
- * Copyright (c) 2011 Martin Srank, http://smasty.net
+ * WikWiki - simple wiki in one PHP file
+ * Copyright (c) 2022 Tommy Vercety
+ * Copyright (c) 2011 Martin Srank
  *
  * Licensed under the terms and conditions of
  * the MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
+ // Settings
 define('PAGE_TITLE', 'Wik');
 define('BASE_PAGE', 'Home Page');
 define('FOOTER_TEXT', 'Copyright © 2010-2016 Martin Srank, 2021-%Y Tommy Vercety <br> Powered by <a href="https://github.com/donvercety/WikWiki">WikWiki</a>');
+
+// Settings that can be inherited
+defined('READ_ONLY') or define('READ_ONLY', false);
+defined('DATE_FORMAT') or define('DATE_FORMAT', 'Y-m-d H:i');
 
 // check if magic quotes logic is needed
 define('MQ_LOGIC', version_compare(phpversion(), '5.3.0', '<'));
@@ -46,8 +53,12 @@ if(empty($_GET)){
 
 
 // Save content.
-if(!empty($_POST)){
-    if(!savePageContent($_POST)){
+if (!empty($_POST)){
+	if (READ_ONLY) {
+		die('Wiki is read-ony!');
+	}
+
+    if (!savePageContent($_POST)){
         $msg = 'Edit failed. Please, try again.';
     }
 }
@@ -219,7 +230,7 @@ function getSidebar($page = BASE_PAGE){
     $mod = 'not yet.';
     $toc = $bl = '';
     if(pageExists($page)){
-        $mod = date('d.m.Y, H:i:s', filemtime(getFilePath($page)));
+        $mod = date(DATE_FORMAT, filemtime(getFilePath($page)));
         $toc = generateToc();
         $bl = "<li class=\"backlinks\"><a href=\"./?backlinks=$id\">Backlinks</a></li>";
     }
@@ -362,7 +373,7 @@ function printRecentChanges($count){
     $list = array_slice($list, 0, $count, true);
     $s = '';
     foreach($list as $t => $l){
-        $s .= "\n- [$l] (" . date("d.m.Y, H:i:s", $t) . ")";
+        $s .= "\n- [$l] (" . date(DATE_FORMAT, $t) . ")";
     }
 
     echo $texy->process($s);
