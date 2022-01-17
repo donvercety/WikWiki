@@ -7,9 +7,9 @@
  * the MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-define('PAGE_TITLE', 'WikWiki');
+define('PAGE_TITLE', 'Wik');
 define('BASE_PAGE', 'Home Page');
-define('FOOTER_TEXT', 'Copyright %Y Martin Srank. | Powered by <a href="https://github.com/smasty/WikWiki">WikWiki</a>.');
+define('FOOTER_TEXT', 'Copyright © 2010-2016 Martin Srank, 2021-%Y Tommy Vercety <br> Powered by <a href="https://github.com/donvercety/WikWiki">WikWiki</a>');
 
 // check if magic quotes logic is needed
 define('MQ_LOGIC', version_compare(phpversion(), '5.3.0', '<'));
