@@ -2,7 +2,9 @@
 
 # WikWiki – minimalistic and lightweight
 [![GitHub release](https://img.shields.io/github/release/donvercety/WikWiki.svg)](https://github.com/donvercety/WikWiki/releases/latest)
+[![Demo](https://img.shields.io/badge/Demo-46a2f1.svg?&logo=Google-Chrome&logoColor=white&labelColor=555&color=007ec6&link=http://wik.atwebpages.com/wikwiki)](http://wik.atwebpages.com/wikwiki)
 [![License](https://img.shields.io/github/license/donvercety/WikWiki)](https://github.com/donvercety/WikWiki/blob/master/LICENCE.md)
+
 
 I have stumbled on this simplistic wiki engine that is suitable for personal notebooks, journals or as a simple knowledge base. The author have abandoned it, so I decided to fork it and do some minor tweaking.
 
