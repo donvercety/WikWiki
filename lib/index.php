@@ -185,6 +185,7 @@ function printHeader($page = BASE_PAGE){
 <title>$html_title</title>
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="24x24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAh0lEQVRIie2VwQmAMAwAT3EcB1HECVzFn7M4gat0gtY96qeClIppVVDxIOTRkCOBUPgiDTADNjIMUEsEJqH5GtpvlgUE1uXW5cmr9d/ZqQMgP5jmNO8XFBG1/d2CIUUQsyLlIgrJBAoYN81LoJMKJHcg5b+DX/BWQYhLP5wQdaJEA9X5+Z7GAnZdR6fKGTfKAAAAAElFTkSuQmCC" />
 </head>
 <body>
   <div id="container">
