@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - [Favicon](https://en.wikipedia.org/wiki/Favicon)
 
+### Fixed
+- Prevent images going out of the border.
+
 ## [1.0.0] - 2022-01-17
 ### Added
 - Support for modern PHP v7.x ([issue](https://github.com/donvercety/WikWiki/issues/1))
