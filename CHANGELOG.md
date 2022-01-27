@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Prevent images going out of the border.
+- Wrong padding on first line in code blocks.
 
 ## [1.0.0] - 2022-01-17
 ### Added

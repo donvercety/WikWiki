@@ -87,6 +87,11 @@ img {
 code, pre {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     background-color: #f7f7f7;
+}
+
+pre {
+    border: 1px solid #eee;
+    overflow: auto;
     padding: 0.2em;
 }
 
@@ -94,9 +99,8 @@ code {
     padding: 0.1em 0.2em;
 }
 
-pre {
-    border: 1px solid #eee;
-    overflow: auto;
+pre > code {
+    padding: 0;
 }
 
 /* Table Style */
