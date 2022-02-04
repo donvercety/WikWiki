@@ -5,11 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+Mainly style related tweaks.
+
 ### Added
 - [Favicon](https://en.wikipedia.org/wiki/Favicon)
 
 ### Fixed
-- Prevent images going out of the border.
+- Mobile layout:
+    - Prevent tables going out of the border.
+    - Prevent images going out of the border.
 - Wrong padding on first line in code blocks.
 
 ## [1.0.0] - 2022-01-17
