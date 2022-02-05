@@ -83,6 +83,13 @@ img {
     height: auto;
 }
 
+blockquote {
+    padding: 0 1em;
+    color: #57606a;
+    border-left: 0.25em solid #d0d7de;
+    margin: 0;
+}
+
 /* Code Blocks */
 code, pre {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
@@ -108,8 +115,8 @@ table {
     background-color: #fff;
     border-spacing: 0;
     border-collapse: collapse;
-	overflow-x: auto;
-	display: block;
+    overflow-x: auto;
+    display: block;
 }
 
 th, td {

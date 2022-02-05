@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - [Favicon](https://en.wikipedia.org/wiki/Favicon)
+- Blockquote element style.
 
 ### Changed
 - Default tab size set to 4.
