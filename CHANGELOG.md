@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - [Favicon](https://en.wikipedia.org/wiki/Favicon)
 
+### Changed
+- Default tab size set to 4.
+
 ### Fixed
 - Textarea tag breaking the edit page ([issue](https://github.com/donvercety/WikWiki/issues/7))
 - Prevent images & tables going out of the border.
