@@ -282,7 +282,7 @@ function printEdit($page){
         $title = $page;
         $id = titleToId($page);
         if(pageExists($page)){
-            $content = getContent($page);
+            $content = htmlentities(getContent($page));
         }
     }
 
