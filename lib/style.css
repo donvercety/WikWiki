@@ -1,4 +1,10 @@
-body{margin:0;padding:0;font:.8em/1.6 Verdana, Arial, sans-serif;text-align:center}
+body {
+    margin: 0;
+    padding: 0;
+    font: .8em/1.6 Verdana, Arial, sans-serif;
+    text-align: center;
+    color: #303030;
+}
 
 #container {
     margin: 0 auto;
