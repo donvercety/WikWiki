@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Slightly darker background for inline code blocks. (`#f7f7f7` -> `#f0f0f0`)
+
 ### Fixed
 - Prevent long code tags from overflowing its line box.
 

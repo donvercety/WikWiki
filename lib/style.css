@@ -93,11 +93,11 @@ blockquote {
 /* Code Blocks */
 code, pre {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
-    background-color: #f7f7f7;
 }
 
 pre {
-    border: 1px solid #eee;
+    border: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
     overflow: auto;
     padding: 0.2em;
 }
@@ -105,10 +105,12 @@ pre {
 code {
     padding: 0.1em 0.2em;
     overflow-wrap: break-word;
+    background-color: #f0f0f0;
 }
 
 pre > code {
     padding: 0;
+    background-color: #f7f7f7;
 }
 
 /* Table Style */
