@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2025-03-28
+
 ### Changed
 - Headings revamped
 - Text to dark gray, more info why - [here](https://uxmovement.com/content/why-you-should-never-use-pure-black-for-text-or-backgrounds/).
